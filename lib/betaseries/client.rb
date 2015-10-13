@@ -1,14 +1,24 @@
-require_relative 'request.rb'
-
 module Betaseries
   class Client
+
+    # Require each methods files
+    Dir.glob(File.join(File.dirname(__FILE__), 'methods/*.rb')).each {|f| require f }
+
+    include Comments
+    include Episodes
+    include Friends
+    include Members
+    include Messages
+    include Movies
+    include Pictures
+    include Planning
+    include Shows
+    include Subtitles
+    include Timeline
 
     attr_accessor :api_key
 
     def initialize(api_key = '')
-      req = Request.new
-      puts req.headers 
-      exit(0)
       raise Betaseries::Error::ApiKeyMissing.new 'a valid API key is needed to call Betaseries API' if api_key.empty?
       self.api_key = api_key
     end

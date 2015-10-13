@@ -11,16 +11,20 @@ module Betaseries
     format :json
     headers 'Accept' => 'application/json', 'X-BetaSeries-Version' => '2.4'
 
-    def get(path)
+    def initialize(api_key)
+      self.class.headers['X-BetaSeries-Key'] = api_key
     end
 
-    def post(path)
+    def get(path, options = {})
     end
 
-    def put(path)
+    def post(path, options={})
     end
 
-    def delete(path)
+    def put(path, options={})
+    end
+
+    def delete(path, options={})
     end
 
     def parse(response)
