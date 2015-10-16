@@ -17,10 +17,12 @@ module Betaseries
     include Timeline
 
     attr_accessor :api_key
+    attr_accessor :request
 
     def initialize(api_key = '')
       raise Betaseries::Error::ApiKeyMissing.new 'a valid API key is needed to call Betaseries API' if api_key.empty?
-      self.api_key = api_key
+      @api_key = api_key
+      @request = Request.new(api_key)
     end
   end
 end

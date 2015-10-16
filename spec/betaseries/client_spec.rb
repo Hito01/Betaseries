@@ -7,7 +7,11 @@ describe Betaseries::Client do
     end
 
     context "when the api key is set" do
-      it { expect(Betaseries::Client.new(API_KEY)).to_not be_nil }
+      it "should have an api_key and a request set" do
+        client = Betaseries::Client.new(API_KEY)
+        expect(client.api_key).to_not be_nil
+        expect(client.request).to_not be_nil
+      end
     end
   end
 
