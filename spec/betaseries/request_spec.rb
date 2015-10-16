@@ -30,7 +30,7 @@ describe Betaseries::Request do
   describe "#parse" do
     context "when the request returns a http code 200" do
       it "should parse the body" do
-        stub_get('http://foo.bar', '{"foo": "bar"}')
+        stub_get('http://foo.bar', 'request_success')
         response = HTTParty.get('http://foo.bar')
         request = Betaseries::Request.new(API_KEY)
         expect(request.parse(response)).to eq({"foo" => "bar"})
@@ -39,7 +39,7 @@ describe Betaseries::Request do
 
     context "when the request doesn't return a http code 200" do
       it "should raise an HttpError" do
-        stub_get('http://foo.bar', "", 404)
+        stub_get('http://foo.bar', 'request_error', 404)
         response = HTTParty.get('http://foo.bar')
         request = Betaseries::Request.new(API_KEY)
         expect { request.parse(response) }.to raise_error(Betaseries::Error::HttpError)
