@@ -1,0 +1,55 @@
+{
+    "errors": [],
+    "show": {
+        "aliases": [
+            "Gotham"
+        ],
+        "characters": "19",
+        "comments": "180",
+        "creation": "2014",
+        "description": "Tout le monde connaît le Commissaire Gordon, adversaire redouté de la pègre de Gotham City, un homme dont la réputation rime avec la loi et l'ordre. Mais que sait-on de son histoire, de son ascension de policier débutant à commissaire ? Qu'est-ce que cela coûte de se frayer un chemin dans une ville régie secrètement par la corruption telle que Gotham City, terrain fertile des méchants les plus emblématiques ? Comment sont nés ces personnages hors du commun que sont Catwoman, le Pingouin, l'Homme-mystère, Double-Face et le Joker ?",
+        "episodes": "27",
+        "followers": "31448",
+        "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "id": 7942,
+        "imdb_id": "tt3749900",
+        "in_account": false,
+        "language": "en",
+        "length": "45",
+        "network": "FOX (US)",
+        "notes": {
+            "mean": "4.2016",
+            "total": "501",
+            "user": 0
+        },
+        "rating": "TV-14",
+        "resource_url": "https://www.betaseries.com/serie/gotham",
+        "seasons": "2",
+        "seasons_details": [
+            {
+                "episodes": 22,
+                "number": 1
+            },
+            {
+                "episodes": 7,
+                "number": 2
+            }
+        ],
+        "similars": "11",
+        "status": "Continuing",
+        "thetvdb_id": 274431,
+        "title": "Gotham",
+        "user": {
+            "archived": false,
+            "favorited": false,
+            "last": "S00E00",
+            "remaining": 0,
+            "status": 0,
+            "tags": null
+        }
+    }
+}
